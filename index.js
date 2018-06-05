@@ -86,7 +86,7 @@ function sendMessage(event) {
 
 var random = Math.floor(Math.random() * arrayLength);
 
-var message = array[random] + "\n\n  I know so many more ways to say thank you. 🤔 So send me more feedback. 😎 ";
+var message = array[random] + "\n\nI know so many more ways to say thank you. 🤔 So send me more feedback. 😎 ";
 
   doNormalRespond(sender, message);
 }
