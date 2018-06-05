@@ -25,6 +25,10 @@ var refAssistantResponses = db.collection('AssistantResponses'); //ref.child('As
 
 const PAGE_ACCESS_TOKEN = "EAADBaYTyfQgBAFhEGE14uMvk2xSJ6AhwN9AD5Q1dMELmsQh4FaOB78QCpbURFcj3c5hZBvQ8imEXq0z0KFBZBSJduZCZC5zKo1AGa02JrI1rHgJr27NWNSOY1kQdI7Cdkxxy2i81goS366ejvQm8SBf869ZC76ZAs2MS4mU0PYVxbIZCUTrDInG"
 
+const server = app.listen(process.env.PORT || 5000, () => {
+  console.log('Express server listening on port %d in %s mode', server.address().port, app.settings.env);
+  //init()
+});
 
 
 app.use(bodyParser.urlencoded({
