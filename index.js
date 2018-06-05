@@ -80,13 +80,36 @@ function sendMessage(event) {
   let sender = event.sender.id;
   let text = event.message.text;
 
+  var arrayLength = 21;
+
+  var array = ["If it wasn’t weird, I would have sent you a picture of myself. Because I look totally grateful.","Great googly gratitude. Thanks so much for your gift!","
+Thank you (not sent from my iPhone).","
+Next time, I’m sending you a cape. Thanks for your superhero-sized gift.","
+Two words: Endless gratitude. Thank you.","
+You score phenomenally high in the kind-o-meter. Seriously, I checked.","
+Your version of shine is a search light. Thanks for spreading so much good.","
+Thanks so much for putting up with our direct mail. But even more, thank you for responding.","
+You’re kind of a big deal. Don’t believe me? Ask our clients.","
+You = awesome. Me = grateful.","
+Move over Gates and Buffett, there’s a new philanthropist in town.","
+Our clients have started an unofficial fan club. You should start practicing your autograph.","
+Do you practice being so wonderful? Thank you kindly for your gift.","
+Amazed. Inspired. Grateful. That’s how your generosity makes me feel.","
+When it comes to making an impact, you rule. (Note: Draw a ruler. You can do it.)","
+You’re a spark plug for good. Thanks for igniting something amazing.","
+a) A peach b) Bee’s knees c) Cat’s pajamas. You’re d) All of the above. Thanks for your bigheartedness.","
+You’re what making a difference looks like. (Note: Draw a mirror. Up the fun factor.)","
+You’re a lifesaver. Literally. And thanks for believing in someone you don’t even know.","
+Is there no limit to your awesomeness? Thank you!","
+You can’t see me but I’m totally doing a happy dance.","
+I’m beginning to think you’re serious about this whole humanitarian thing."];
 
 
+var random = Math.floor(Math.random() * arrayLength);
 
+var message = array[random] + "\n\n  I know so many more ways to say thank you. 🤔 So send me more feedback. 😎 ";
 
-
-
-  doNormalRespond(sender, "Thanks for the feedback. Send more feedback to get other crazy ways to say thank you.");
+  doNormalRespond(sender, message);
 }
 
 
