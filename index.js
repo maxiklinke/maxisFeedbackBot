@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
 
 app.get('/privacy', (req, res) => {
   //Show privacy stuff
-  res.status(200).send("We are not sharing your personal data. We may response on messages you send us.");
+  res.status(200).send("We are not sharing your personal data. We may respond on messages you send us.");
 })
 
 
