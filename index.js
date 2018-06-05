@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
 
 app.get('/privacy', (req, res) => {
   //Show privacy stuff
-  res.status(200).send("Facebook-Connect - Wir bieten Ihnen die Möglichkeit sich für unseren Dienst mit Facebook-Connect anzumelden. Eine zusätzliche Registrierung ist somit nicht möglich. Zur Anmeldung werden Sie auf die Seite von Facebook weitergeleitet, wo Sie sich mit ihren Nutzungsdaten anmelden können. Hierdurch werden ihre Facebook-Profil und unser Dienst verknüpft. Dadurch erhalten wir Einsicht auf die Informationen Ihres öffentlichen Profils. Diese Informationen werden anonymisiert und statistisch ausgewertet unseren Geschäftskunden zur Verfügung gestellt. Weitere Informationen zu Facebook-Connect und den Privatsphäre-Einstellungen entnehmen Sie bitte den Datenschutzhinweisen und den Nutzungsbedingungen der Facebook Inc.");
+  res.status(200).send("We are not sharing your personal data. We may response on messages you send us.");
 })
 
 
